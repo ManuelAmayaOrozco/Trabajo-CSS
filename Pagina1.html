@@ -21,7 +21,7 @@
                 }
                 
                 .div1 { grid-area: 1 / 1 / 2 / 6; }
-                .div2 { grid-area: 2 / 2 / 6 / 5; }
+                .div2 { grid-area: 2 / 2 / 5 / 5; }
                 .div3 { grid-area: 2 / 1 / 4 / 2; }
                 .div4 { grid-area: 2 / 5 / 6 / 6; }
 
@@ -34,9 +34,26 @@
                 text-align: center;
                 color: brown;
             }
+            .div2 {
+                background-color: cornflowerblue;
+            }
             .div2 p{
                 font-size: 15px;
                 color: burlywood;
+            }
+            .div3{
+                animation: myAnim 2s ease 0s 1 normal forwards;            
+            }
+            @keyframes myAnim {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-250px) rotate(-200deg);
+                }
+            
+                100% {
+                    opacity: 1;
+                    transform: translateY(0) rotate(0deg);
+                }
             }
         </style>
     </head>
@@ -55,7 +72,7 @@
                 <img src="Grilled-Portobello-Mushrooms-06.jpg" height="500px" width="450px">
             </div>
             <div class="div4"> </div>
-                <img src="champinones_rebozados_con_salsa_tartara_25286_600.jpg" height="500px" width="400px">
+                <img src="champinones_rebozados_con_salsa_tartara_25286_600.jpg" height="400px" width="400px">
             </div>
     </body>
 </html>
