@@ -23,7 +23,7 @@
                 .div1 { grid-area: 1 / 1 / 2 / 6; }
                 .div2 { grid-area: 2 / 2 / 5 / 5; }
                 .div3 { grid-area: 2 / 1 / 4 / 2; }
-                .div4 { grid-area: 2 / 5 / 6 / 6; }
+                .div4 { grid-area: 2 / 5 / 5 / 6; }
 
             h1 {
                 font-size: 65px;
@@ -33,18 +33,28 @@
             h2 {
                 text-align: center;
                 color: brown;
+                font-size: 50px;
             }
             .div2 {
                 background-color: cornflowerblue;
+                text-align: center;
             }
             .div2 p{
-                font-size: 15px;
+                font-size: 30px;
                 color: burlywood;
             }
-            .div3{
-                animation: myAnim 2s ease 0s 1 normal forwards;            
+            .div2 ul{
+                font-size: 30px;
+                color: orange;
+                list-style: none;
             }
-            @keyframes myAnim {
+            .div2 li{
+                margin: 100px;
+            }
+            .div3{
+                animation: myAnim1 2s ease 0s 1 normal forwards;            
+            }
+            @keyframes myAnim1 {
                 0% {
                     opacity: 0;
                     transform: translateY(-250px) rotate(-200deg);
@@ -67,12 +77,20 @@
 
                 <p>En esta web, iremos explicando diferentes recetas y maneras para cocinar champiñones, de maneras no tan vistas comunmente.</p>
                 <p>Desde asados, hasta rebozados, aquí usamos todo tipos de recetas.</p>
+
+                <ul>
+                    <li><a>Enlace 1</a></li>
+                    <li><a>Enlace 2</a></li>
+                    <li><a>Enlace 3</a></li>
+                    <li><a>Enlace 4</a></li>
+                </ul>
+
+                <img src="champinones_rebozados_con_salsa_tartara_25286_600.jpg" height="400px" width="400px" align="center">
             </div>
             <div class="div3">
                 <img src="Grilled-Portobello-Mushrooms-06.jpg" height="500px" width="450px">
             </div>
             <div class="div4"> </div>
-                <img src="champinones_rebozados_con_salsa_tartara_25286_600.jpg" height="400px" width="400px">
             </div>
     </body>
 </html>
