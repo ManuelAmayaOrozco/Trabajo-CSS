@@ -9,7 +9,11 @@
         <style>
             body{
                 font-family: Arial,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                font-size: 12px;
+                font-size: 18px;
+                background-image:url(restaurante_main.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
             }
             header{
                 text-align: center;
@@ -17,26 +21,76 @@
             div{
                 text-align: center;
             }
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            #parent {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                }
+            #div1 { grid-area: 1 / 1 / 2 / 6; }
+            #div2 { grid-area: 2 / 2 / 6 / 5; }
+            #div3 { grid-area: 2 / 1 / 6 / 2; }
+            #div4 { grid-area: 5 / 1 / 6 / 6; } 
+            .opciones {
+                position: relative;
+                background-color: lightblue;
+                border-style: solid;
+                border-color: darkblue;
+                padding: 20px;
+            }
+            p{
+                color: darkblue;
+            }
             </style>
     </head>
     <body>
-        <header>
-            <h1><i>"Simplicidad Gastronómica: Recetas que Deleitan"</i></h1>
-            <h4>La mejor experiencia culinaria para disfrutar uno mismo o en compañía</h4>
-        </header>
         <main>
-            <div id="div1">
-                <p>Muy buenas a todos nuestros queridos internautas, somos el dúo de chefs principales encargados del restaurante <i>"Sinfonía de Sabores"</i>, de 1 estella michelin y de 2 soles repsol, dentro de la provincia de Cádiz.</p> 
-                <p>Nuestro objetivo al crear esta página es que todos podamos llegar a comer y disfrutar nuestras recetas más exitosas para desayuno,</p>
-                <p>almuerzo y cena por supuesto. También así enseñamos a todos los lectores que pueda</p>
+            <div id="parent">
+                <div id="div1">
+                    <h1><i>"Simplicidad Gastronómica: Recetas que Deleitan"</i></h1>
+                    <h4>La mejor experiencia culinaria para disfrutar uno mismo o en compañía</h4>
+                    <p>Muy buenas a todos nuestros queridos internautas, somos el dúo de chefs principales encargados del restaurante <i>"Sinfonía de Sabores"</i>, de 1 estella michelin y de 2 soles repsol, dentro de la provincia de Cádiz.</p> 
+                    <p>Nuestro objetivo al crear esta página es que todos podamos llegar a comer y disfrutar nuestras recetas más exitosas para desayuno,</p>
+                    <p>almuerzo y cena por supuesto. También así enseñamos a todos los lectores que pueda</p>
+                </div>
+                <div id="div2">
+                    <p>En nuestra página web, te invitamos a explorar un universo de sabores excepcionales 
+                        y texturas exquisitas, donde cada plato es una obra maestra de la cocina contemporánea. 
+                        Nuestro equipo de chefs expertos trabaja incansablemente para ofrecerte una experiencia culinaria única, 
+                        donde la calidad y la creatividad se unen para crear momentos inolvidables alrededor de la mesa. Ya sea que busques
+                        una cena íntima para dos o un banquete para celebrar ocasiones especiales, estamos aquí para hacer realidad tus sueños 
+                        gastronómicos. Únete a nosotros y descubre el arte de la buena mesa en su máxima expresión.
+                    </p>
+                    <p>Nuestra prioridad ahora es recomendarles recetas de nuestros compañeros chefs de un alimento infravalorado en algunas
+                        ocasiones como los hongos. Setas, champiñones son un ejemplo de estas.
+                    </p>
+                    <img src="los_mejores_platos_de_cocina_del_mundo_chef_3359.jpg">
+                </div>
+                <div id="div3">
+                    <div class="opciones">
+                        <a href="PaginaPrincipal.html">Inicio</a>
+                    </div>
+                    <div class="opciones">
+                        <a href="Nuestra receta.html">Nuestra receta</a>
+                    </div>
+                    <div class="opciones">
+                        <a href="Pagina1.html">Nuestras Champiñones</a>
+                    </div>
+                    <div class="opciones">
+                        <a href="Pagina3.html">Reseñas</a>
+                    </div>
+                </div>
+                <div id="div4">
+                    <p>En nuestra pestaña Tutoriales podreís observar nuestra receta favorita para poder hacerla en casa un plato tan delicioso
+                        como sencillo aunque cuanto más practica tengais en la cocina mejor os saldrá.
+                    </p>
+                </div>
             </div>
-            <div id="div2"></div>
-            <div id="div3"></div>
-            <div id="div4"></div>
-            <div id="div5"></div>
         </main>
-        <footer>
-            <div id="div6"></div>
-        </footer>
     </body>
 </html>
